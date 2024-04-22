@@ -147,7 +147,7 @@ CMD ["infermp10"]
 $ cargo build && cargo run
 # In separate session
 $ curl -X POST   localhost:8080/chat   -H 'Content-Type: application/json'   -d '{"prompt": "Rust is"}'
-
+```
 ![alt text](images/image-7.png)
 
 6. Run with docker to test as well. Build the image and run the image in the same session, while "curling" it in another.
