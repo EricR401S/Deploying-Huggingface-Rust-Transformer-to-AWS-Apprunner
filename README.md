@@ -152,12 +152,10 @@ $ curl -X POST   localhost:8080/chat   -H 'Content-Type: application/json'   -d 
 
 6. Run with docker to test as well. Build the image and run the image in the same session, while "curling" it in another.
 ```
-# docker commands
 $ docker build -t autocomplete_actix .
 $ docker run -it --rm -p 8080:8080 autocomplete_actix
 $ curl -X POST   localhost:8080/chat   -H 'Content-Type: application/json'   -d '{"prompt": "Final Fantasy draws from so many cultures like"}'
 ```
-
 Docker Output:
 
 ![alt text](images/image-9.png)
