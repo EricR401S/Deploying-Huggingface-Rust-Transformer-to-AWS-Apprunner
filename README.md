@@ -36,7 +36,7 @@ With Cargo:
 
 ```
 # local
-make local-run
+cd infermp10 && make local-run
 # In a separate terminal session, run
 curl -X POST localhost:8080/chat   -H 'Content-Type: application/json'   -d '{"prompt": "Toy Story sold"}'
 ```
@@ -45,7 +45,7 @@ curl -X POST localhost:8080/chat   -H 'Content-Type: application/json'   -d '{"p
 With Docker:
 ```
 # docker
-make local-docker-run
+cd infermp10 && make local-docker-run
 # In a separate terminal session, run
 curl -X POST   localhost:8080/chat   -H 'Content-Type: application/json'   -d '{"prompt": "Hey Arnold! was famous for"}'
 ```
