@@ -3,7 +3,7 @@
 ## Description
 In this project, we containerize an Actix web application that allows the user to curl request an endpoint with a json payload, which contains a prompt, to receive the a completed version of the prompt inside the payload. In other words, one can ask about a capital and get information about it. The backend is an Actix web framework powered by a small LLAMA model, from Rustformers' Huggingface repository, doing inference. The modelling component of the app was made possible in large part thanks to the [template](https://github.com/AIAnytime/LLM-Inference-API-in-Rust/tree/main) by [AIAnywhere](https://github.com/AIAnytime). This app is then containerized and sent to AWS Elastic Container Registry (ECR), where its image is then deployed via AWS Apprunner, generating a link for public use. That link can be accessed and queried via the curl command in a very specific way , which is detailed below. Unfortunately, I was not successful with deploying on Lambga or Apprunner, as I received timeouts on both ends despite any configuration change that I made.
 
-[Click Here for this Project's Overview Demo Video!!!]()
+[Click Here for this Project's Overview Demo Video!!!](https://www.youtube.com/watch?v=2zO6R8ay08U)
 
 ## Why opt for an autocomplete functionality?
 
